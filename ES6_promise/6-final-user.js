@@ -13,7 +13,7 @@ export default async function handleProfileSignup(
       await uploadPhoto(fileName);
     })
     .catch((err) => {
-      status.push({ status: 'rejeted', value: err.toString() });
+      status.push({ status: 'rejected', value: err.toString() });
     });
   return status;
 }
